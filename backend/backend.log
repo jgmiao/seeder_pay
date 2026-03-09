@@ -1,0 +1,88 @@
+[GIN-debug] [WARNING] Creating an Engine instance with the Logger and Recovery middleware already attached.
+
+[GIN-debug] [WARNING] Running in "debug" mode. Switch to "release" mode in production.
+ - using env:	export GIN_MODE=release
+ - using code:	gin.SetMode(gin.ReleaseMode)
+
+[GIN-debug] POST   /api/v1/products          --> seeder_pay_api/api/handler.(*RestHandler).CreateProduct-fm (4 handlers)
+[GIN-debug] GET    /api/v1/products          --> seeder_pay_api/api/handler.(*RestHandler).ListProducts-fm (4 handlers)
+[GIN-debug] GET    /api/v1/products/:id      --> seeder_pay_api/api/handler.(*RestHandler).GetProduct-fm (4 handlers)
+[GIN-debug] PUT    /api/v1/products/:id      --> seeder_pay_api/api/handler.(*RestHandler).UpdateProduct-fm (4 handlers)
+[GIN-debug] DELETE /api/v1/products/:id      --> seeder_pay_api/api/handler.(*RestHandler).ArchiveProduct-fm (4 handlers)
+[GIN-debug] GET    /api/v1/products/:id/prices --> seeder_pay_api/api/handler.(*RestHandler).ListPrices-fm (4 handlers)
+[GIN-debug] POST   /api/v1/prices            --> seeder_pay_api/api/handler.(*RestHandler).CreatePrice-fm (4 handlers)
+[GIN-debug] POST   /api/v1/customers         --> seeder_pay_api/api/handler.(*RestHandler).CreateCustomer-fm (4 handlers)
+[GIN-debug] GET    /api/v1/customers         --> seeder_pay_api/api/handler.(*RestHandler).ListCustomers-fm (4 handlers)
+[GIN-debug] GET    /api/v1/customers/:id     --> seeder_pay_api/api/handler.(*RestHandler).GetCustomer-fm (4 handlers)
+[GIN-debug] PUT    /api/v1/customers/:id     --> seeder_pay_api/api/handler.(*RestHandler).UpdateCustomer-fm (4 handlers)
+[GIN-debug] POST   /api/v1/subscriptions     --> seeder_pay_api/api/handler.(*RestHandler).CreateSubscription-fm (4 handlers)
+[GIN-debug] GET    /api/v1/subscriptions     --> seeder_pay_api/api/handler.(*RestHandler).ListSubscriptions-fm (4 handlers)
+[GIN-debug] GET    /api/v1/subscriptions/:id --> seeder_pay_api/api/handler.(*RestHandler).GetSubscription-fm (4 handlers)
+[GIN-debug] PUT    /api/v1/subscriptions/:id/cancel --> seeder_pay_api/api/handler.(*RestHandler).CancelSubscription-fm (4 handlers)
+[GIN-debug] GET    /api/v1/invoices          --> seeder_pay_api/api/handler.(*RestHandler).ListInvoices-fm (4 handlers)
+[GIN-debug] GET    /api/v1/invoices/:id      --> seeder_pay_api/api/handler.(*RestHandler).GetInvoice-fm (4 handlers)
+[GIN-debug] GET    /api/v1/stats/overview    --> seeder_pay_api/api/handler.(*RestHandler).GetStatsOverview-fm (4 handlers)
+2026/03/09 15:37:34 Starting Server on :8080...
+[GIN-debug] [WARNING] You trusted all proxies, this is NOT safe. We recommend you to set a value.
+Please check https://github.com/gin-gonic/gin/blob/master/docs/doc.md#dont-trust-all-proxies for details.
+[GIN-debug] Listening and serving HTTP on :8080
+[GIN] 2026/03/09 - 15:38:19 | 204 | 12.326µs |             ::1 | OPTIONS  "/api/v1/stats/overview"
+[GIN] 2026/03/09 - 15:38:19 | 200 |   5.77ms |             ::1 | GET      "/api/v1/stats/overview"
+[GIN] 2026/03/09 - 15:39:44 | 200 |      2ms |             ::1 | GET      "/api/v1/stats/overview"
+[GIN] 2026/03/09 - 15:40:03 | 204 |   2.64ms |             ::1 | OPTIONS  "/api/v1/products"
+[GIN] 2026/03/09 - 15:40:03 | 204 | 19.932µs |             ::1 | OPTIONS  "/api/v1/products"
+[GIN] 2026/03/09 - 15:40:03 | 200 |  11.03ms |             ::1 | GET      "/api/v1/products"
+[GIN] 2026/03/09 - 15:40:03 | 200 |   1.17ms |             ::1 | GET      "/api/v1/products"
+[GIN] 2026/03/09 - 15:40:03 | 204 | 10.143µs |             ::1 | OPTIONS  "/api/v1/products/prod_1a336b41bd9040869a51542aa0b27359/prices"
+[GIN] 2026/03/09 - 15:40:03 | 204 |  7.728µs |             ::1 | OPTIONS  "/api/v1/products/prod_demo_001/prices"
+[GIN] 2026/03/09 - 15:40:03 | 200 |   1.69ms |             ::1 | GET      "/api/v1/products/prod_1a336b41bd9040869a51542aa0b27359/prices"
+[GIN] 2026/03/09 - 15:40:03 | 204 | 102.873µs |             ::1 | OPTIONS  "/api/v1/products/prod_bc9f0d4d0e074588850ea865b0271240/prices"
+[GIN] 2026/03/09 - 15:40:03 | 200 |   4.62ms |             ::1 | GET      "/api/v1/products/prod_demo_001/prices"
+[GIN] 2026/03/09 - 15:40:03 | 200 | 529.403µs |             ::1 | GET      "/api/v1/products/prod_bc9f0d4d0e074588850ea865b0271240/prices"
+[GIN] 2026/03/09 - 15:40:03 | 200 | 581.395µs |             ::1 | GET      "/api/v1/products/prod_1a336b41bd9040869a51542aa0b27359/prices"
+[GIN] 2026/03/09 - 15:40:03 | 200 | 538.913µs |             ::1 | GET      "/api/v1/products/prod_demo_001/prices"
+[GIN] 2026/03/09 - 15:40:03 | 200 | 336.463µs |             ::1 | GET      "/api/v1/products/prod_bc9f0d4d0e074588850ea865b0271240/prices"
+[GIN] 2026/03/09 - 15:40:37 | 204 |  7.493µs |             ::1 | OPTIONS  "/api/v1/products"
+[GIN] 2026/03/09 - 15:40:37 | 200 |  17.04ms |             ::1 | POST     "/api/v1/products"
+[GIN] 2026/03/09 - 15:40:37 | 204 |  8.677µs |             ::1 | OPTIONS  "/api/v1/prices"
+[GIN] 2026/03/09 - 15:40:37 | 200 |  10.44ms |             ::1 | POST     "/api/v1/prices"
+[GIN] 2026/03/09 - 15:40:38 | 200 | 730.94µs |             ::1 | GET      "/api/v1/products"
+[GIN] 2026/03/09 - 15:40:38 | 204 |  6.959µs |             ::1 | OPTIONS  "/api/v1/products/prod_1a336b41bd9040869a51542aa0b27359/prices"
+[GIN] 2026/03/09 - 15:40:38 | 204 |  5.985µs |             ::1 | OPTIONS  "/api/v1/products/prod_22a36dc1eae04d81baf6765f1963dd43/prices"
+[GIN] 2026/03/09 - 15:40:38 | 204 | 67.388µs |             ::1 | OPTIONS  "/api/v1/products/prod_bc9f0d4d0e074588850ea865b0271240/prices"
+[GIN] 2026/03/09 - 15:40:38 | 204 | 13.058µs |             ::1 | OPTIONS  "/api/v1/products/prod_demo_001/prices"
+[GIN] 2026/03/09 - 15:40:38 | 200 |   1.33ms |             ::1 | GET      "/api/v1/products/prod_1a336b41bd9040869a51542aa0b27359/prices"
+[GIN] 2026/03/09 - 15:40:38 | 200 |   2.37ms |             ::1 | GET      "/api/v1/products/prod_22a36dc1eae04d81baf6765f1963dd43/prices"
+[GIN] 2026/03/09 - 15:40:38 | 200 |   1.09ms |             ::1 | GET      "/api/v1/products/prod_bc9f0d4d0e074588850ea865b0271240/prices"
+[GIN] 2026/03/09 - 15:40:38 | 200 |   2.66ms |             ::1 | GET      "/api/v1/products/prod_demo_001/prices"
+[GIN] 2026/03/09 - 15:41:10 | 204 | 17.134µs |             ::1 | OPTIONS  "/api/v1/customers"
+[GIN] 2026/03/09 - 15:41:10 | 200 |   1.06ms |             ::1 | GET      "/api/v1/customers"
+[GIN] 2026/03/09 - 15:41:10 | 200 |   1.44ms |             ::1 | GET      "/api/v1/customers"
+[GIN] 2026/03/09 - 15:43:02 | 204 |  7.099µs |             ::1 | OPTIONS  "/api/v1/stats/overview"
+[GIN] 2026/03/09 - 15:43:02 | 200 |   4.53ms |             ::1 | GET      "/api/v1/stats/overview"
+[GIN] 2026/03/09 - 15:43:21 | 204 | 30.992µs |             ::1 | OPTIONS  "/api/v1/products"
+[GIN] 2026/03/09 - 15:43:21 | 200 |   1.92ms |             ::1 | GET      "/api/v1/products"
+[GIN] 2026/03/09 - 15:43:21 | 204 |    7.2µs |             ::1 | OPTIONS  "/api/v1/products/prod_demo_001/prices"
+[GIN] 2026/03/09 - 15:43:21 | 204 | 12.551µs |             ::1 | OPTIONS  "/api/v1/products/prod_22a36dc1eae04d81baf6765f1963dd43/prices"
+[GIN] 2026/03/09 - 15:43:21 | 204 |  7.826µs |             ::1 | OPTIONS  "/api/v1/products/prod_bc9f0d4d0e074588850ea865b0271240/prices"
+[GIN] 2026/03/09 - 15:43:21 | 204 |  9.054µs |             ::1 | OPTIONS  "/api/v1/products/prod_1a336b41bd9040869a51542aa0b27359/prices"
+[GIN] 2026/03/09 - 15:43:21 | 200 |   4.09ms |             ::1 | GET      "/api/v1/products/prod_bc9f0d4d0e074588850ea865b0271240/prices"
+[GIN] 2026/03/09 - 15:43:21 | 200 |   8.91ms |             ::1 | GET      "/api/v1/products/prod_demo_001/prices"
+[GIN] 2026/03/09 - 15:43:21 | 200 |   8.07ms |             ::1 | GET      "/api/v1/products/prod_22a36dc1eae04d81baf6765f1963dd43/prices"
+[GIN] 2026/03/09 - 15:43:21 | 200 |  21.68ms |             ::1 | GET      "/api/v1/products/prod_1a336b41bd9040869a51542aa0b27359/prices"
+[GIN] 2026/03/09 - 15:43:30 | 204 | 10.966µs |             ::1 | OPTIONS  "/api/v1/customers"
+[GIN] 2026/03/09 - 15:43:30 | 200 |   1.25ms |             ::1 | GET      "/api/v1/customers"
+[GIN] 2026/03/09 - 15:43:37 | 204 | 18.828µs |             ::1 | OPTIONS  "/api/v1/products"
+[GIN] 2026/03/09 - 15:43:37 | 200 | 869.828µs |             ::1 | GET      "/api/v1/products"
+[GIN] 2026/03/09 - 15:43:37 | 204 | 10.811µs |             ::1 | OPTIONS  "/api/v1/products/prod_22a36dc1eae04d81baf6765f1963dd43/prices"
+[GIN] 2026/03/09 - 15:43:37 | 200 | 447.667µs |             ::1 | GET      "/api/v1/products/prod_22a36dc1eae04d81baf6765f1963dd43/prices"
+[GIN] 2026/03/09 - 15:43:37 | 204 |  7.241µs |             ::1 | OPTIONS  "/api/v1/products/prod_1a336b41bd9040869a51542aa0b27359/prices"
+[GIN] 2026/03/09 - 15:43:37 | 200 | 486.132µs |             ::1 | GET      "/api/v1/products/prod_1a336b41bd9040869a51542aa0b27359/prices"
+[GIN] 2026/03/09 - 15:43:37 | 204 |    5.2µs |             ::1 | OPTIONS  "/api/v1/products/prod_demo_001/prices"
+[GIN] 2026/03/09 - 15:43:37 | 200 | 923.385µs |             ::1 | GET      "/api/v1/products/prod_demo_001/prices"
+[GIN] 2026/03/09 - 15:43:37 | 204 |  6.323µs |             ::1 | OPTIONS  "/api/v1/products/prod_bc9f0d4d0e074588850ea865b0271240/prices"
+[GIN] 2026/03/09 - 15:43:37 | 200 | 619.44µs |             ::1 | GET      "/api/v1/products/prod_bc9f0d4d0e074588850ea865b0271240/prices"
+[GIN] 2026/03/09 - 15:43:59 | 204 |  7.076µs |             ::1 | OPTIONS  "/api/v1/customers"
+[GIN] 2026/03/09 - 15:43:59 | 200 | 553.532µs |             ::1 | GET      "/api/v1/customers"
+[GIN] 2026/03/09 - 15:44:13 | 204 |  6.884µs |             ::1 | OPTIONS  "/api/v1/subscriptions"
+[GIN] 2026/03/09 - 15:44:13 | 200 |   8.01ms |             ::1 | GET      "/api/v1/subscriptions"
