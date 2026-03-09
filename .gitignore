@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Next.js Build Artifacts
+.next/
+out/
+
+# Backend Build Artifacts & Logs
+backend/seeder_pay_api
+backend/backend.log
+backend/*.db
+backend/*.db-journal
+
+# IDE & OS
+.vscode/
+.DS_Store
+*.swp
+*.swo
+
+# Local Environment
+.env*
+!.env.example
